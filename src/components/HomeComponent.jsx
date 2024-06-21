@@ -1,16 +1,19 @@
 import React from "react";
 
+const CryptoHeader = () => {
+  return (
+    <div className="grid grid-rows-[1fr_6fr] gap-2">
+      <div className="bg-green-500 rounded-sm"></div>
+      <div className="bg-blue-500 rounded-sm"></div>
+    </div>
+  );
+};
+
 export function HomeComponent() {
   return (
-    <div className="w-screen h-screen m-4 grid grid-cols-[2fr_1fr]">
-      <div className="grid grid-rows-[1fr_5fr]">
-        <div className="grid grid-cols-[4fr_1fr]">
-          <div className="bg-green-500"></div>
-          <div className="bg-gray-500"></div>
-        </div>
-        <div className="bg-blue-500"></div>
-      </div>
-      <div className="bg-red-500"></div>
+    <div className="w-full h-screen m-4 grid grid-cols-[2fr_1fr] gap-2">
+      <CryptoHeader />
+      <div className="bg-red-500 rounded-sm"></div>
     </div>
   );
 }
